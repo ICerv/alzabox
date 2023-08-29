@@ -38,6 +38,27 @@ img {
   max-width: 100%;
 }
 
+/* SIDE BODY BANNERS*/
+.body__banners {
+  position: relative;
+}
+.body__banners a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body__banners .body__banner--left-link {
+  position: absolute;
+  top: -100px;
+  left: 148px;
+}
+.body__banners .body__banner--right-link {
+  position: absolute;
+  top: -100px;
+  right: 148px;
+}
+
 /* INTRO*/
 main {
   color: #222;

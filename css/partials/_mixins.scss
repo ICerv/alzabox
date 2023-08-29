@@ -1,3 +1,9 @@
+@mixin banner-position($top, $side) {
+  position: absolute;
+  top: $top;
+  #{$side}: 148px;
+}
+
 @mixin container {
   max-width: 1310px;
   margin: 0 auto;

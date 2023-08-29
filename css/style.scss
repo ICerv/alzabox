@@ -38,6 +38,26 @@ img {
   max-width: 100%;
 }
 
+/* SIDE BODY BANNERS*/
+.body__banners {
+  position: relative;
+
+  a {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .body__banner--left-link {
+    @include banner-position(-100px, left);
+  }
+
+  .body__banner--right-link {
+    @include banner-position(-100px, right);
+  }
+}
 /* INTRO*/
 
 main {
