@@ -37,3 +37,96 @@ a {
 img {
   max-width: 100%;
 }
+
+/* INTRO*/
+
+main {
+  color: $text-color;
+  font-family: $font-body;
+}
+
+main .container {
+  @include container;
+}
+
+.intro {
+  background: linear-gradient(to bottom right, #f2fde5, #fff);
+  min-height: 100vh;
+  padding: 20px;
+  border-top: 5px solid $text-color;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.intro__text--heading {
+  @include heading;
+}
+
+.intro__text--subheading {
+  @include heading;
+  font-size: $sm-subheading-font;
+  font-weight: $font-semi-bold;
+}
+
+.intro__phone--banner img {
+  position: absolute;
+  top: 110;
+  right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.intro__downloads {
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro__downloads--img {
+  max-width: 50%;
+}
+
+.intro__downloads--store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intro__downloads--store-buttons img {
+  max-width: 100%;
+}
+
+.intro__scan--indicator {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .intro__text--heading {
+    font-size: $heading-font;
+  }
+
+  .intro__text--subheading {
+    font-size: $subheading-font;
+  }
+
+  .intro__downloads {
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+
+  .intro__downloads img {
+    flex-basis: 20%;
+  }
+
+  .intro__downloads--store-buttons a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  .intro__scan--indicator {
+    margin-bottom: 150px;
+    display: flex;
+    margin-left: 60px;
+  }
+}
