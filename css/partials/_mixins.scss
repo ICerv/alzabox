@@ -1,0 +1,17 @@
+@mixin container {
+  max-width: 1310px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@mixin heading {
+  display: block;
+  font-family: $font-header;
+  font-size: $sm-heading-font;
+  font-weight: $font-bold;
+  color: $headings-color;
+  line-height: 1.5;
+  font-weight: $font-bold;
+  text-align: center;
+  margin: 0;
+}

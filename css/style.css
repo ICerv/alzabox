@@ -1,1 +1,39 @@
-/*# sourceMappingURL=style.css.map */
+/*===== COLORS =====*/
+/*===== SIZES =====*/
+/*===== FONT AND TYPOGRAPHY =====*/
+/*===== FONT WEIGHT =====*/
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+/*===== BASE CSS =====*/
+*,
+body,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#fff 10%, #bae2fc 98%);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
