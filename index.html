@@ -35,69 +35,89 @@
     <!-- INTRO -->
     <main>
       <div class="container">
-        <div class="intro">
-          <h2 class="intro__text--heading">Nákupy pod palcem</h2>
-          <h4 class="intro__text--subheading">
+        <section id="intro">
+          <h1 class="intro__heading heading">Nákupy pod palcem</h1>
+          <h3 class="intro__subheading subheading">
             Nakupuj pohodlně s naší aplikací, ať jsi kdekoliv.
-          </h4>
-          <div class="intro__phone--banner">
+          </h3>
+          <div class="intro__content">
             <img
+              class="intro__phone--banner"
               src="./images/phone-banner.png"
               alt="Reklamní banner s telefonem"
             />
-          </div>
 
-          <div class="intro__downloads">
-            <img
-              class="intro__downloads--img"
-              src="./images/qr-code.png"
-              alt="QR kód - stáhněte aplikaci"
-            />
+            <div class="intro__downloads">
+              <img
+                class="intro__downloads--img"
+                src="./images/qr-code.png"
+                alt="QR kód - stáhněte aplikaci"
+              />
 
-            <div class="intro__downloads--store-buttons">
-              <a href="#">
-                <img src="./images/app-store.png" alt="Tlačítko AppStore" />
-              </a>
-              <a href="#">
-                <img src="./images/google-play.png" alt="Tlačítko GooglePlay" />
-              </a>
+              <div class="intro__downloads--store-buttons">
+                <a href="#">
+                  <img src="./images/app-store.png" alt="Tlačítko AppStore" />
+                </a>
+                <a href="#">
+                  <img
+                    src="./images/google-play.png"
+                    alt="Tlačítko GooglePlay"
+                  />
+                </a>
+              </div>
+
+              <img
+                src="./images/scan-qr-code.png"
+                alt="Indikátor naskenování QR kódu"
+                class="intro__scan--indicator"
+              />
             </div>
-
-            <img
-              src="./images/scan-qr-code.png"
-              alt="Indikátor naskenování QR kódu"
-              class="intro__scan--indicator"
-            />
           </div>
-          <nav class="intro__navigation">
-            <ul class="intro__navigation--items">
-              <li>
-                <a href="#section-1">
-                  <img src="./images/icon-section1.png" alt="Ikona sekce 1" />
-                  <p>Bezdotykové otevírání AlzaBoxů</p>
-                </a>
-              </li>
-              <li>
-                <a href="#section-2">
-                  <img src="./images/icon-section2.png" alt="Ikona sekce 2" />
-                  <p>Zrychlený výdej na pobočce</p>
-                </a>
-              </li>
-              <li>
-                <a href="#section-3">
-                  <img src="./images/icon-section3.png" alt="Ikona sekce 3" />
-                  <p>Stav a historie objednávek</p>
-                </a>
-              </li>
-              <li>
-                <a href="#section-4">
-                  <img src="./images/icon-section4.png" alt="Ikona sekce 4" />
-                  <p>Umí toho ještě více</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </section>
+        <nav class="navigation">
+          <ul class="navigation__menu--items">
+            <li class="navigation__item">
+              <a class="navigation__link--item" href="#section-1">
+                <img
+                  class="icon__link"
+                  src="./images/icon-section1.png"
+                  alt="Ikona sekce 1"
+                />
+                <p class="text__link">Bezdotykové otevírání AlzaBoxů</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link--item" href="#section-2">
+                <img
+                  class="icon__link"
+                  src="./images/icon-section2.png"
+                  alt="Ikona sekce 2"
+                />
+                <p class="text__link">Zrychlený výdej na pobočce</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link--item" href="#section-3">
+                <img
+                  class="icon__link"
+                  src="./images/icon-section3.png"
+                  alt="Ikona sekce 3"
+                />
+                <p class="text__link">Stav a historie objednávek</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link--item" href="#section-4">
+                <img
+                  class="icon__link"
+                  src="./images/icon-section4.png"
+                  alt="Ikona sekce 4"
+                />
+                <p class="text__link">Umí toho ještě více</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
   </body>

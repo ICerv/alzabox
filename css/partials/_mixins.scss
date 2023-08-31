@@ -5,7 +5,9 @@
 }
 
 @mixin container {
+  background: $bg-container;
   max-width: 1310px;
+  min-height: 100vh;
   margin: 0 auto;
   position: relative;
 }
@@ -19,5 +21,5 @@
   line-height: 1.5;
   font-weight: $font-bold;
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
 }

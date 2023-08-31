@@ -1,14 +1,14 @@
 /*===== COLORS =====*/
 $bg-page: linear-gradient(#fff 10%, #bae2fc 98%);
-$bg-container: #fff;
+$bg-container: linear-gradient(to bottom right, #f2fde5, #fff);
 $bg-gradient: linear-gradient(150deg, #042856, #22579d);
 $text-color: #222;
-$headings-color: #1653a4;
+$headings-color: #114384;
 $green-color: #a1c900;
 $blue-color: #0094e7;
-$gray-color: #e0e0e0;
+$gray-color: #f6f4f4;
 $white-color: #fff;
-$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+$box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 
 /*===== SIZES =====*/
 $border-radius: 4px;
@@ -21,10 +21,10 @@ $font-header: 'Poppins', sans-serif;
 $small-font-size: 0.7rem;
 $base-font-size: 1rem;
 $large-font-size: 1.25rem;
-$heading-font: 3.5rem;
+$heading-font: 4rem;
 $sm-heading-font: 2rem;
-$subheading-font: 1.5rem;
-$sm-subheading-font: 1rem;
+$subheading-font: 2.5rem;
+$sm-subheading-font: 1.1rem;
 
 /*===== FONT WEIGHT =====*/
 $font-regular: 400;
