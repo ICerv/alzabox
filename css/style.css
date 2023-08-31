@@ -181,6 +181,11 @@ section {
   line-height: 2;
 }
 
+.section__alzabox--instructions {
+  display: flex;
+  flex-direction: column;
+}
+
 .section__alzabox--phone-cta {
   display: flex;
   flex-direction: column;
@@ -209,14 +214,29 @@ section {
 .section__alzabox--item {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+}
+
+.section__alzabox--item-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .section__alzabox--item i {
   font-size: 30px;
   color: #a1c900;
   padding-top: 5px;
+}
+
+.section__alzabox--title {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .section__alzabox--text {
@@ -322,6 +342,10 @@ section {
     flex-direction: row;
     font-size: 1.3rem;
     line-height: 2.5;
+    gap: 15px;
+  }
+  .section__alzabox--instructions {
+    max-width: 70%;
   }
   .section__alzabox--phone-cta {
     display: flex;
@@ -355,5 +379,9 @@ section {
   }
   .section__alzabox--text {
     font-size: 1.3rem;
+  }
+  .section__alzabox--title {
+    font-size: 1.7rem;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=style.css.map */
