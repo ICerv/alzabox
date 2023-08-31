@@ -1,328 +1,280 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- GOOGLE FONTS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- FONT AWESOME CDN-->
-    <script
-      src="https://kit.fontawesome.com/b5de76faa7.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- MAIN JS -->
-    <script type="module" src="./index.js"></script>
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Landing Page Alzabox</title>
-  </head>
 
-  <body>
-    <!-- BODY SIDE BANNERS -->
-    <div class="body__banners">
-      <a href="#" class="body__banner--left-link">
-        <img src="./images/left-side-banner.png" alt="Levý banner" />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- FONT AWESOME CDN-->
+  <script src="https://kit.fontawesome.com/b5de76faa7.js" crossorigin="anonymous"></script>
+  <!-- MAIN JS -->
+  <script type="module" src="./index.js"></script>
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Landing Page Alzabox</title>
+</head>
 
-      <a href="#" class="body__banner--right-link">
-        <img src="./images/right-side-banner.png" alt="Pravý banner" />
-      </a>
-    </div>
-    <!-- INTRO -->
-    <main>
-      <div class="container">
-        <section id="intro">
-          <h1 class="intro__heading heading">Nákupy pod palcem</h1>
-          <h3 class="intro__subheading subheading">
-            Nakupuj pohodlně s naší aplikací, ať jsi kdekoliv.
-          </h3>
-          <div class="intro__content">
-            <img
-              class="intro__phone--banner"
-              src="./images/phone-banner.png"
-              alt="Reklamní banner s telefonem"
-            />
+<body>
+<!--  SCROLL TOP -->
+<a href="#" class="scroll-top">
+  <i class="fa-solid fa-angles-up scroll__top--icon"></i>
+</a>
 
-            <div class="intro__downloads">
-              <img
-                class="intro__downloads--img"
-                src="./images/qr-code.png"
-                alt="QR kód - stáhněte aplikaci"
-              />
+  <!-- BODY SIDE BANNERS -->
+  <div class="body__banners">
+    <a href="#" class="body__banner--left-link">
+      <img src="./images/left-side-banner.png" alt="Levý banner" />
+    </a>
 
-              <div class="intro__downloads--store-buttons">
-                <a href="#">
-                  <img src="./images/app-store.png" alt="Tlačítko AppStore" />
-                </a>
-                <a href="#">
-                  <img
-                    src="./images/google-play.png"
-                    alt="Tlačítko GooglePlay"
-                  />
-                </a>
-              </div>
+    <a href="#" class="body__banner--right-link">
+      <img src="./images/right-side-banner.png" alt="Pravý banner" />
+    </a>
+  </div>
+  <!-- INTRO -->
+  <main>
+    <div class="container">
+      <section id="intro">
+        <h1 class="intro__heading">Nákupy pod palcem</h1>
+        <h3 class="intro__subheading">
+          Nakupuj pohodlně s naší aplikací, ať jsi kdekoliv.
+        </h3>
+        <div class="intro__content">
+          <img class="intro__phone--banner" src="./images/phone-banner.png" alt="Reklamní banner s telefonem" />
 
-              <img
-                src="./images/scan-qr-code.png"
-                alt="Indikátor naskenování QR kódu"
-                class="intro__scan--indicator"
-              />
+          <div class="intro__downloads">
+            <img class="intro__downloads--img" src="./images/qr-code.png" alt="QR kód - stáhněte aplikaci" />
+
+            <div class="intro__downloads--store-buttons">
+              <a href="#">
+                <img src="./images/app-store.png" alt="Tlačítko AppStore" />
+              </a>
+              <a href="#">
+                <img src="./images/google-play.png" alt="Tlačítko GooglePlay" />
+              </a>
             </div>
+
+            <img src="./images/scan-qr-code.png" alt="Indikátor naskenování QR kódu" class="intro__scan--indicator" />
           </div>
-        </section>
-        <nav class="navigation">
-          <ul class="navigation__menu--items">
-            <li class="navigation__item">
-              <a class="navigation__link--item" href="#section-1">
-                <img
-                  class="icon__link"
-                  src="./images/icon-section1.png"
-                  alt="Ikona sekce 1"
-                />
-                <p class="text__link">Bezdotykové otevírání AlzaBoxů</p>
-              </a>
+        </div>
+      </section>
+      <nav class="navigation">
+        <ul class="navigation__menu--items">
+          <li class="navigation__item">
+            <a class="navigation__link--item" href="#section-1">
+              <img class="icon__link" src="./images/icon-section1.png" alt="Ikona sekce 1" />
+              <p class="text__link">Bezdotykové otevírání AlzaBoxů</p>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link--item" href="#section-2">
+              <img class="icon__link" src="./images/icon-section2.png" alt="Ikona sekce 2" />
+              <p class="text__link">Zrychlený výdej na pobočce</p>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link--item" href="#section-3">
+              <img class="icon__link" src="./images/icon-section3.png" alt="Ikona sekce 3" />
+              <p class="text__link">Stav a historie objednávek</p>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link--item" href="#section-4">
+              <img class="icon__link" src="./images/icon-section4.png" alt="Ikona sekce 4" />
+              <p class="text__link">Umí toho ještě více</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- SECTION 1 -->
+      <section id="section-1" class="section">
+        <div class="section__alzabox">
+          <h1 class="section__alzabox--heading heading">
+            Otevření více než <strong><u>1300 AlzaBoxu</u> </strong>jedním
+            tlačítkem?
+            <span>Pod palcem.</span>
+          </h1>
+          <h3 class="section__alzabox--subheading subheading">
+            Neztrácej čas. S aplikací si můžeš AlzaBox otevřít během okamžiku
+            jedním kliknutím, a to ještě bezdotykově.
+          </h3>
+        </div>
+        <div class="section__alzabox--content">
+          <div class="section__alzabox--phone-cta">
+            <img class="section__phone--img" src="./images/phone-section1.png"
+              alt="Screenshot zobrazující displej telefonu" />
+            <a href="#" class="section__alzabox--cta-button">Více o Alzaboxech</a>
+          </div>
+          <ul class="section__alzabox--instructions">
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Až budete u AlzaBoxu, otevřete si mobilní aplikaci a
+                <strong>klikněte</strong> na tlačítko
+                <strong><u>Otevřít AlzaBox</u></strong>.
+              </p>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link--item" href="#section-2">
-                <img
-                  class="icon__link"
-                  src="./images/icon-section2.png"
-                  alt="Ikona sekce 2"
-                />
-                <p class="text__link">Zrychlený výdej na pobočce</p>
-              </a>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                <strong>Naskenujte</strong> pomocí aplikace
+                <strong>QR kód</strong> na obrazovce AlzaBoxu.
+              </p>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link--item" href="#section-3">
-                <img
-                  class="icon__link"
-                  src="./images/icon-section3.png"
-                  alt="Ikona sekce 3"
-                />
-                <p class="text__link">Stav a historie objednávek</p>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link--item" href="#section-4">
-                <img
-                  class="icon__link"
-                  src="./images/icon-section4.png"
-                  alt="Ikona sekce 4"
-                />
-                <p class="text__link">Umí toho ještě více</p>
-              </a>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                <strong>A je to. </strong>Schránka se otevře a vy si
+                <strong>vyzvednete zboží</strong>. Pak už jen schránku
+                zavřete.
+              </p>
             </li>
           </ul>
-        </nav>
-        <!-- SECTION 1 -->
-        <section id="section-1" class="section">
-          <div class="section__alzabox">
-            <h1 class="section__alzabox--heading heading">
-              Otevření více než <strong><u>1300 AlzaBoxu</u> </strong>jedním
-              tlačítkem?
-              <span>Pod palcem.</span>
-            </h1>
-            <h3 class="section__alzabox--subheading subheading">
-              Neztrácej čas. S aplikací si můžeš AlzaBox otevřít během okamžiku
-              jedním kliknutím, a to ještě bezdotykově.
-            </h3>
-          </div>
-          <div class="section__alzabox--content">
-            <div class="section__alzabox--phone-cta">
-              <img
-                class="section__phone--img"
-                src="./images/phone-section1.png"
-                alt="Screenshot zobrazující displej telefonu"
-              />
-              <a href="#" class="section__alzabox--cta-button"
-                >Více o Alzaboxech</a
-              >
-            </div>
-            <ul class="section__alzabox--instructions">
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Až budete u AlzaBoxu, otevřete si mobilní aplikaci a
-                  <strong>klikněte</strong> na tlačítko
-                  <strong><u>Otevřít AlzaBox</u></strong
-                  >.
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  <strong>Naskenujte</strong> pomocí aplikace
-                  <strong>QR kód</strong> na obrazovce AlzaBoxu.
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  <strong>A je to. </strong>Schránka se otevře a vy si
-                  <strong>vyzvednete zboží</strong>. Pak už jen schránku
-                  zavřete.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- SECTION 2 -->
-        <section id="section-2" class="section">
-          <div class="section__alzabox--branch">
-            <h1 class="section__alzabox--heading">
-              Přeskočení <strong><u>fronty</u></strong> na pobočce?
-              <span>Pod palcem.</span>
-            </h1>
-            <h3 class="section__alzabox--subheading">
-              S aplikací už se nemusíš mačkat ve frontě. Stačí cestou na pobočku
-              kliknout na tlačítko vyzvednout a objednávku ti připravíme.
-            </h3>
+      <!-- SECTION 2 -->
+      <section id="section-2" class="section">
+        <div class="section__alzabox--branch">
+          <h1 class="section__alzabox--heading">
+            Přeskočení <strong><u>fronty</u></strong> na pobočce?
+            <span>Pod palcem.</span>
+          </h1>
+          <h3 class="section__alzabox--subheading">
+            S aplikací už se nemusíš mačkat ve frontě. Stačí cestou na pobočku
+            kliknout na tlačítko vyzvednout a objednávku ti připravíme.
+          </h3>
+        </div>
+        <div class="section__alzabox--content">
+          <ul class="section__alzabox--instructions">
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Až budete u pobočky, kde máte zboží k vyzvednutí,
+                <strong>kliknete</strong> v aplikaci na
+                <strong><u>Zahájit výdej nákupu</u>.</strong>
+              </p>
+            </li>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Následně obsluha pobočky začne s
+                <strong>výdejem</strong> vašeho zboží.
+              </p>
+            </li>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Za pár minut bude zboží <strong>připraveno k výdeji</strong> a
+                vy si zboží už jen vyzvednete.
+                <strong><u> Bez fronty.</u></strong>
+              </p>
+            </li>
+          </ul>
+          <div class="section__alzabox--phone-cta">
+            <img class="section__phone--img" src="./images/phone-section2.png"
+              alt="Screenshot zobrazující displej telefonu" />
+            <a href="#" class="section__alzabox--cta-button">Nejbližší pobočka</a>
           </div>
-          <div class="section__alzabox--content">
-            <ul class="section__alzabox--instructions">
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Až budete u pobočky, kde máte zboží k vyzvednutí,
-                  <strong>kliknete</strong> v aplikaci na
-                  <strong><u>Zahájit výdej nákupu</u>.</strong>
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Následně obsluha pobočky začne s
-                  <strong>výdejem</strong> vašeho zboží.
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Za pár minut bude zboží <strong>připraveno k výdeji</strong> a
-                  vy si zboží už jen vyzvednete.
-                  <strong><u> Bez fronty.</u></strong>
-                </p>
-              </li>
-            </ul>
-            <div class="section__alzabox--phone-cta">
-              <img
-                class="section__phone--img"
-                src="./images/phone-section2.png"
-                alt="Screenshot zobrazující displej telefonu"
-              />
-              <a href="#" class="section__alzabox--cta-button"
-                >Nejbližší pobočka</a
-              >
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- SECTION 3 -->
-        <section id="section-3" class="section">
-          <div class="section__alzabox--order-tracking">
-            <h1 class="section__alzabox--heading">
-              Sledování <strong><u>objednávky</u></strong
-              >? <span>Pod palcem.</span>
-            </h1>
-            <h3 class="section__alzabox--subheading">
-              Měj aktuální přehled o tom, jak to vypadá s tvou objednávkou a kdy
-              ji můžeš očekávat.
-            </h3>
+      <!-- SECTION 3 -->
+      <section id="section-3" class="section">
+        <div class="section__alzabox--order-tracking">
+          <h1 class="section__alzabox--heading">
+            Sledování <strong><u>objednávky</u></strong>? <span>Pod palcem.</span>
+          </h1>
+          <h3 class="section__alzabox--subheading">
+            Měj aktuální přehled o tom, jak to vypadá s tvou objednávkou a kdy
+            ji můžeš očekávat.
+          </h3>
+        </div>
+        <div class="section__alzabox--content">
+          <div class="section__alzabox--phone-cta">
+            <img class="section__phone--img" src="./images/phone-section3.png"
+              alt="Screenshot zobrazující displej telefonu" />
           </div>
-          <div class="section__alzabox--content">
-            <div class="section__alzabox--phone-cta">
-              <img
-                class="section__phone--img"
-                src="./images/phone-section3.png"
-                alt="Screenshot zobrazující displej telefonu"
-              />
-            </div>
-            <ul class="section__alzabox--instructions">
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Vše máte na jednom místě. Přehled objednávek, záruční listy,
-                  reklamace a další.
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Díky push notifikacím vám neunikne žádná slevová akce nebo
-                  jiná důležitá informace.
-                </p>
-              </li>
-              <li class="section__alzabox--item">
-                <i class="fa-solid fa-check"></i>
-                <p class="section__alzabox--text">
-                  Reklamaci, či vrácení nevyhovující zboží snadno vyřešíte na
-                  pár kliků.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <ul class="section__alzabox--instructions">
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Vše máte na jednom místě. Přehled objednávek, záruční listy,
+                reklamace a další.
+              </p>
+            </li>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Díky push notifikacím vám neunikne žádná slevová akce nebo
+                jiná důležitá informace.
+              </p>
+            </li>
+            <li class="section__alzabox--item">
+              <i class="fa-solid fa-check"></i>
+              <p class="section__alzabox--text">
+                Reklamaci, či vrácení nevyhovující zboží snadno vyřešíte na
+                pár kliků.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- SECTION 4 -->
-        <section id="section-2" class="section">
-          <div class="section__alzabox--provide-more">
-            <h1 class="section__alzabox--heading">
-              Umí <strong><u>ještě více</u></strong>
-            </h1>
+      <!-- SECTION 4 -->
+      <section id="section-2" class="section">
+        <div class="section__alzabox--provide-more">
+          <h1 class="section__alzabox--heading">
+            Umí <strong><u>ještě více</u></strong>
+          </h1>
+        </div>
+        <div class="section__alzabox--content">
+          <ul class="section__alzabox--instructions">
+            <li class="section__alzabox--item section__alzabox--item-more">
+              <h5 class="section__alzabox--title">
+                <i class="fa-solid fa-check"></i>
+                Ověřujte si nejlepší ceny s funkcí skenování čárovýchQR kódů
+              </h5>
+              <p class="section__alzabox--text">
+                Ať už zrovna nakupujete v jakémkoliv obchodě, cenu si můžete
+                snadno porovnat s naší cenou pomocí mobilní aplikace. Tato
+                funkce je praktická i ve chvíli, kdy se o produktu potřebujete
+                dozvědět více detailů.
+              </p>
+            </li>
+            <li class="section__alzabox--item section__alzabox--item-more">
+              <h5 class="section__alzabox--title">
+                <i class="fa-solid fa-check"></i>
+                Vyzkoušejte si, jak se vám hodí spotřebiče do domácnosti s
+                rozšířenou realitou
+              </h5 class="section__alzabox--title">
+              <p class="section__alzabox--text">
+                S funkcí AR/3D si můžete prohlédnout vybrané produkty u vás
+                doma, ještě předtím, než je doma rozbalíte. Přesvědčte se, že
+                se vše vejde a hodí přesně tak jak má.
+              </p>
+            </li>
+            <li class="section__alzabox--item section__alzabox--item-more">
+              <h5 class="section__alzabox--title"><i class="fa-solid fa-check"></i> Tmavý režim</h5>
+              <p class="section__alzabox--text block">
+                Pokud preferujete ve vašem telefonu tmavý režim, tak se
+                nemusíte obávat. Naší aplikaci si také můžete přehodit do
+                tmavého kabátu.
+              </p>
+            </li>
+          </ul>
+          <div class="section__alzabox--phone-cta">
+            <img class="section__phone--img" src="./images/phone-section4.png"
+              alt="Screenshot zobrazující displej telefonu" />
+            <a href="#" class="section__alzabox--cta-button">Stáhnout aplikaci</a>
           </div>
-          <div class="section__alzabox--content">
-            <ul class="section__alzabox--instructions">
-              <li class="section__alzabox--item section__alzabox--item-more">
-                <h5 class="section__alzabox--title">
-                  <i class="fa-solid fa-check"></i>
-                  Ověřujte si nejlepší ceny s funkcí skenování čárovýchQR kódů
-                </h5>
-                <p class="section__alzabox--text">
-                  Ať už zrovna nakupujete v jakémkoliv obchodě, cenu si můžete
-                  snadno porovnat s naší cenou pomocí mobilní aplikace. Tato
-                  funkce je praktická i ve chvíli, kdy se o produktu potřebujete
-                  dozvědět více detailů.
-                </p>
-              </li>
-              <li class="section__alzabox--item section__alzabox--item-more">
-                <h5 class="section__alzabox--title">
-                  <i class="fa-solid fa-check"></i>
-                  Vyzkoušejte si, jak se vám hodí spotřebiče do domácnosti s
-                  rozšířenou realitou
-                </h5 class="section__alzabox--title">
-                <p class="section__alzabox--text">
-                  S funkcí AR/3D si můžete prohlédnout vybrané produkty u vás
-                  doma, ještě předtím, než je doma rozbalíte. Přesvědčte se, že
-                  se vše vejde a hodí přesně tak jak má.
-                </p>
-              </li>
-              <li class="section__alzabox--item section__alzabox--item-more">
-                <h5 class="section__alzabox--title"><i class="fa-solid fa-check"></i> Tmavý režim</h5>
-                <p class="section__alzabox--text block">
-                  Pokud preferujete ve vašem telefonu tmavý režim, tak se
-                  nemusíte obávat. Naší aplikaci si také můžete přehodit do
-                  tmavého kabátu.
-                </p>
-              </li>
-            </ul>
-            <div class="section__alzabox--phone-cta">
-              <img
-                class="section__phone--img"
-                src="./images/phone-section4.png"
-                alt="Screenshot zobrazující displej telefonu"
-              />
-              <a href="#" class="section__alzabox--cta-button"
-                >Stáhnout aplikaci</a
-              >
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- FOOTER -->
+ 
+</body>
+
 </html>

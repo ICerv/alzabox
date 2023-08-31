@@ -26,16 +26,15 @@
 
 @mixin text-content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 15%;
-  flex-direction: column;
   font-size: $base-font-size;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 @mixin phone-image {
-  max-width: 80%;
+  max-width: 100%;
   display: block;
 }
 
@@ -49,12 +48,12 @@
 
 @mixin cta-button {
   text-align: center;
-  width: 75%;
-  padding: 15px 20px;
+  padding: 15px 30px;
+  letter-spacing: 1px;
   border-radius: $border-radius;
   background: $green-color;
   color: $white-color;
-  font-size: $base-font-size;
+  font-size: $medium-font-size;
   font-weight: $font-semi-bold;
   box-shadow: $box-shadow;
 }

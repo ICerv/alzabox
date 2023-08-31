@@ -35,11 +35,30 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* BODY SIDE BANNERS*/
 .body__banners {
   display: none;
+}
+
+/* SCROLL TOP */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 330px;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.scroll__top--icon {
+  font-size: 24px;
 }
 
 /* INTRO*/
@@ -60,14 +79,16 @@ main {
 section {
   width: 100%;
   padding: 25px;
+  position: relative;
 }
 
 #intro {
   border-top: 5px solid #222;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
+.intro__heading,
 .section__alzabox--heading {
   display: block;
   font-family: "Poppins", sans-serif;
@@ -79,6 +100,7 @@ section {
   margin: 10px 0;
 }
 
+.intro__subheading,
 .section__alzabox--subheading {
   display: block;
   font-family: "Poppins", sans-serif;
@@ -88,8 +110,13 @@ section {
   font-weight: 700;
   text-align: center;
   margin: 10px 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+.section__alzabox--heading span {
+  color: green;
+  display: block;
 }
 
 .intro__content {
@@ -161,7 +188,7 @@ section {
   font-weight: 500;
 }
 
-/* SECTION 1 */
+/* SECTION */
 .section__alzabox {
   display: flex;
   flex-direction: column;
@@ -173,12 +200,11 @@ section {
 
 .section__alzabox--content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 15%;
-  flex-direction: column;
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 .section__alzabox--instructions {
@@ -195,18 +221,18 @@ section {
 }
 
 .section__phone--img {
-  max-width: 80%;
+  max-width: 100%;
   display: block;
 }
 
 .section__alzabox--cta-button {
   text-align: center;
-  width: 75%;
-  padding: 15px 20px;
-  border-radius: 4px;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  border-radius: 5px;
   background: #a1c900;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -235,8 +261,12 @@ section {
 }
 
 .section__alzabox--title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+.section__alzabox--title i {
+  padding-right: 10px;
 }
 
 .section__alzabox--text {
@@ -267,7 +297,7 @@ section {
     top: -100px;
     right: 148px;
   }
-  /* INTRO */
+  /* MEDIA - INTRO */
   main {
     max-width: 1310px;
     margin: 50px auto;
@@ -279,10 +309,11 @@ section {
     display: flex;
     flex-direction: column;
   }
+  .intro__heading,
   .section__alzabox--heading {
     font-size: 3rem;
-    margin-top: 30px;
   }
+  .intro__subheading,
   .section__alzabox--subheading {
     font-size: 1.7rem;
     margin: 15px 110px 0;
@@ -292,10 +323,10 @@ section {
   }
   .intro__phone--banner {
     max-width: 600px;
-    width: 50%;
+    width: 40%;
   }
   .intro__downloads img {
-    flex-basis: 20%;
+    flex-basis: 19%;
   }
   .intro__downloads--store-buttons a:hover:hover, .intro__downloads--store-buttons a:hover:focus {
     transform: scale(1.1);
@@ -306,10 +337,10 @@ section {
     display: flex;
     margin-left: 60px;
   }
-  /* NAVIGATION */
+  /* MEDIA - NAVIGATION */
   .navigation {
     min-height: 18em;
-    margin-top: 260px;
+    margin-top: 100px;
     padding: 50px 0;
   }
   .navigation__menu--items {
@@ -327,25 +358,26 @@ section {
     width: 60px;
   }
   .text__link {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 500;
   }
-  /* MEDIA - SECTION 1 */
+  /* MEDIA - SECTION */
   .section__alzabox--content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 15%;
-    flex-direction: column;
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.7;
     flex-direction: row;
-    font-size: 1.3rem;
-    line-height: 2.5;
+    font-size: 1.5rem;
     gap: 15px;
   }
   .section__alzabox--instructions {
     max-width: 70%;
+  }
+  .section__alzabox--item-more {
+    margin-top: 0;
   }
   .section__alzabox--phone-cta {
     display: flex;
@@ -353,32 +385,39 @@ section {
     align-items: center;
     gap: 20px;
     margin: 40px auto;
-    width: 40%;
+  }
+  .section__phone--img {
+    max-width: 100%;
+    display: block;
   }
   a.section__alzabox--cta-button {
     text-align: center;
-    width: 75%;
-    padding: 15px 20px;
-    border-radius: 4px;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    border-radius: 5px;
     background: #a1c900;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    width: 75%;
-    padding: 0 20px;
-    font-size: 1.3rem;
+    padding: 20px 40px;
   }
   a.section__alzabox--cta-button:hover:hover, a.section__alzabox--cta-button:hover:focus {
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
+  .section__alzabox--item {
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
   .section__alzabox--item i {
     font-size: 40px;
-    padding-top: 15px;
+    padding-top: 3px;
   }
   .section__alzabox--text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .section__alzabox--title {
     font-size: 1.7rem;
