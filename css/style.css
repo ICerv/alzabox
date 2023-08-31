@@ -68,7 +68,7 @@ section {
   border-top-right-radius: 4px;
 }
 
-.heading {
+.section__alzabox--heading {
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 1.7rem;
@@ -79,7 +79,7 @@ section {
   margin: 10px 0;
 }
 
-.subheading {
+.section__alzabox--subheading {
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 1.7rem;
@@ -259,11 +259,11 @@ section {
     display: flex;
     flex-direction: column;
   }
-  .heading {
+  .section__alzabox--heading {
     font-size: 3rem;
     margin-top: 30px;
   }
-  .subheading {
+  .section__alzabox--subheading {
     font-size: 1.7rem;
     margin: 15px 110px 0;
   }

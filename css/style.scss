@@ -64,11 +64,11 @@ section {
   border-top-right-radius: $border-radius;
 }
 
-.heading {
+.section__alzabox--heading {
   @include heading;
 }
 
-.subheading {
+.section__alzabox--subheading {
   @include heading;
   font-size: $sm-subheading-font;
   font-weight: $font-semi-bold;
@@ -225,12 +225,12 @@ section {
     flex-direction: column;
   }
 
-  .heading {
+  .section__alzabox--heading {
     font-size: $heading-font;
     margin-top: 30px;
   }
 
-  .subheading {
+  .section__alzabox--subheading {
     font-size: $subheading-font;
     margin: 15px 110px 0;
   }
