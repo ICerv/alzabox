@@ -1,5 +1,5 @@
 /*===== COLORS =====*/
-$bg-page: linear-gradient(#fff 10%, #bae2fc 98%);
+$bg-page: linear-gradient(to bottom, #fff 5%, #bae2fc 98%, #bae2fc 100%);
 $bg-container: linear-gradient(to bottom right, #f2fde5, #fff);
 // $bg-polygon: linear-gradient(150deg, #042856, #22579d);
 $text-color: #222;
@@ -20,11 +20,11 @@ $font-header: 'Poppins', sans-serif;
 
 $small-font-size: 0.7rem;
 $base-font-size: 1rem;
-$large-font-size: 1.25rem;
-$heading-font: 4rem;
-$sm-heading-font: 2rem;
-$subheading-font: 2.5rem;
-$sm-subheading-font: 1.1rem;
+$large-font-size: 1.3rem;
+$heading-font: 3rem;
+$sm-heading-font: 1.7rem;
+$subheading-font: 1.7rem;
+$sm-subheading-font: 1rem;
 
 /*===== FONT WEIGHT =====*/
 $font-regular: 400;
