@@ -164,6 +164,21 @@ section {
   font-weight: 500;
 }
 
+/* SECTION 1 */
+.section__alzabox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 34%;
+  font-size: 26px;
+}
+
+.section__phone--img {
+  max-width: 300px;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 768px) {
   /* BODY SIDE BANNERS*/
   .body__banners {
@@ -248,5 +263,12 @@ section {
   .text__link {
     font-size: 1.25rem;
     font-weight: 500;
+  }
+  /* SECTION 1 */
+  .section__alzabox--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
