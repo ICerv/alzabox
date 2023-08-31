@@ -47,18 +47,17 @@ img {
 .scroll-top {
   position: fixed;
   bottom: 20px;
-  right: 330px;
+  right: 630px;
   background-color: #ffffff;
   color: #333333;
-  padding: 10px;
+  padding: 20px;
   border-radius: 50%;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  display: none;
+  box-shadow: $box-shadow;
   z-index: 1000;
 }
 
 .scroll__top--icon {
-  font-size: 24px;
+  font-size: $subheading-font;
 }
 
 /* INTRO*/
@@ -75,6 +74,7 @@ main {
 
 section {
   width: 100%;
+  min-height: 50vh;
   padding: 25px;
   position: relative;
 }
