@@ -45,26 +45,26 @@ img {
 
 /* SCROLL TOP */
 .scroll-top {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
-  right: 100px;
+  right: 10px;
   background-color: #ffffff;
   color: #333333;
-  padding: 20px;
+  padding: 10px;
   border-radius: 50%;
   box-shadow: $box-shadow;
   z-index: 1000;
 }
 
 .scroll__top--icon {
-  font-size: $subheading-font;
+  font-size: $medium-font-size;
 }
 
 /* INTRO*/
 
 main {
   min-width: 325px;
-  color: $text-color;
+  color: $icon-color;
   font-family: $font-body;
 }
 
@@ -75,12 +75,12 @@ main {
 section {
   width: 100%;
   min-height: 50vh;
-  padding: 25px;
+  padding: 10px 25px;
   position: relative;
 }
 
 #intro {
-  border-top: 5px solid $text-color;
+  border-top: 5px solid $icon-color;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
 }
@@ -242,6 +242,15 @@ section {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
+  /* SCROLL BUTTON */
+  .scroll-top {
+    right: 5px;
+    padding: 20px;
+  }
+
+  .scroll__top--icon {
+    font-size: $subheading-font;
+  }
   /* BODY SIDE BANNERS*/
   .body__banners {
     display: flex;
@@ -269,7 +278,7 @@ section {
     margin: 50px auto;
   }
   section {
-    padding: 50px;
+    padding: 20px;
   }
 
   .container {
@@ -285,7 +294,7 @@ section {
   .intro__subheading,
   .section__alzabox--subheading {
     font-size: $subheading-font;
-    margin: 15px 110px 0;
+    margin: 25px 110px;
   }
 
   .intro__downloads {
@@ -351,7 +360,7 @@ section {
 
   .section__alzabox--instructions {
     max-width: 70%;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   .section__alzabox--item-more {
