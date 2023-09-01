@@ -45,7 +45,7 @@ img {
 
 /* SCROLL TOP */
 .scroll-top {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 10px;
   background-color: #ffffff;
@@ -244,7 +244,7 @@ section {
 @media (min-width: 768px) {
   /* SCROLL BUTTON */
   .scroll-top {
-    right: 5px;
+    right: 550px;
     padding: 20px;
   }
 
