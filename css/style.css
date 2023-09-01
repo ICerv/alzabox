@@ -47,7 +47,7 @@ img {
 .scroll-top {
   position: fixed;
   bottom: 20px;
-  right: 630px;
+  right: 100px;
   background-color: #ffffff;
   color: #333333;
   padding: 20px;
@@ -158,7 +158,7 @@ section {
 
 /* NAVIGATION */
 .navigation {
-  background: transparent;
+  background: #fbfbfb;
   margin-top: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -290,12 +290,12 @@ section {
   .body__banners .body__banner--left-link {
     position: absolute;
     top: -100px;
-    left: 148px;
+    left: -150px;
   }
   .body__banners .body__banner--right-link {
     position: absolute;
     top: -100px;
-    right: 148px;
+    right: -150px;
   }
   /* MEDIA - INTRO */
   main {
@@ -375,6 +375,7 @@ section {
   }
   .section__alzabox--instructions {
     max-width: 70%;
+    margin-bottom: 75px;
   }
   .section__alzabox--item-more {
     margin-top: 0;

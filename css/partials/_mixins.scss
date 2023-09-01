@@ -1,7 +1,7 @@
 @mixin banner-position($top, $side) {
   position: absolute;
   top: $top;
-  #{$side}: 148px;
+  #{$side}: -150px;
 }
 
 @mixin container {

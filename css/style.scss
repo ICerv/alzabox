@@ -47,7 +47,7 @@ img {
 .scroll-top {
   position: fixed;
   bottom: 20px;
-  right: 630px;
+  right: 100px;
   background-color: #ffffff;
   color: #333333;
   padding: 20px;
@@ -141,7 +141,7 @@ section {
 
 /* NAVIGATION */
 .navigation {
-  background: transparent;
+  background: $light-gray-color;
   margin-top: 20px;
   box-shadow: $box-shadow;
 }
@@ -172,7 +172,6 @@ section {
 }
 
 /* SECTION */
-
 .section__alzabox {
   display: flex;
   flex-direction: column;
@@ -352,6 +351,7 @@ section {
 
   .section__alzabox--instructions {
     max-width: 70%;
+    margin-bottom: 75px;
   }
 
   .section__alzabox--item-more {
