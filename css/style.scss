@@ -72,10 +72,6 @@ main {
 }
 
 section {
-  width: 100%;
-  min-height: 50vh;
-  padding: 10px 25px;
-  position: relative;
 }
 
 #intro {
@@ -171,6 +167,10 @@ section {
 }
 
 /* SECTION */
+#section-2,
+#section-4 {
+  background: $bg-section;
+}
 .section__alzabox {
   display: flex;
   flex-direction: column;
@@ -243,7 +243,7 @@ section {
 @media (min-width: 768px) {
   /* SCROLL BUTTON */
   .scroll-top {
-    right: 100px;
+    right: 150px;
     padding: 20px;
   }
 
@@ -392,10 +392,6 @@ section {
   }
 
   /* MEDIA - INTRO */
-  main {
-    max-width: 1310px;
-    margin: 50px auto;
-  }
   section {
     padding: 40px;
   }
@@ -474,7 +470,7 @@ section {
     @include text-content;
     flex-direction: row;
     font-size: $large-font-size;
-    gap: 15px;
+    gap: 40px;
   }
 
   .section__alzabox--instructions {
@@ -492,6 +488,7 @@ section {
 
   .section__phone--img {
     @include phone-image;
+    width: 350px;
   }
 
   a.section__alzabox--cta-button {

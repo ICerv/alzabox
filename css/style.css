@@ -67,17 +67,9 @@ main {
 }
 
 .container {
-  background: linear-gradient(to bottom right, #f2fde5, #fff);
+  background: linear-gradient(to bottom right, #f8fff1, #fff);
   max-width: 1310px;
-  min-height: 100vh;
   margin: 0 auto;
-  position: relative;
-}
-
-section {
-  width: 100%;
-  min-height: 50vh;
-  padding: 10px 25px;
   position: relative;
 }
 
@@ -188,6 +180,11 @@ section {
 }
 
 /* SECTION */
+#section-2,
+#section-4 {
+  background: #f7fcf6;
+}
+
 .section__alzabox {
   display: flex;
   flex-direction: column;
@@ -277,7 +274,7 @@ section {
 @media (min-width: 768px) {
   /* SCROLL BUTTON */
   .scroll-top {
-    right: 100px;
+    right: 150px;
     padding: 20px;
   }
   .scroll__top--icon {
@@ -406,10 +403,6 @@ section {
     color: #e3e0e0;
   }
   /* MEDIA - INTRO */
-  main {
-    max-width: 1310px;
-    margin: 50px auto;
-  }
   section {
     padding: 40px;
   }
@@ -479,7 +472,7 @@ section {
     line-height: 1.7;
     flex-direction: row;
     font-size: 1.5rem;
-    gap: 15px;
+    gap: 40px;
   }
   .section__alzabox--instructions {
     max-width: 70%;
@@ -498,6 +491,7 @@ section {
   .section__phone--img {
     max-width: 100%;
     display: block;
+    width: 350px;
   }
   a.section__alzabox--cta-button {
     text-align: center;
