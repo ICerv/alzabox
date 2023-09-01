@@ -35,7 +35,6 @@ a {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 /* BODY SIDE BANNERS*/
@@ -244,7 +243,7 @@ section {
 @media (min-width: 768px) {
   /* SCROLL BUTTON */
   .scroll-top {
-    right: 550px;
+    right: 100px;
     padding: 20px;
   }
 
@@ -272,13 +271,133 @@ section {
       @include banner-position(-100px, right);
     }
   }
+  /* MEDIA - HEADER */
+  header {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    height: 100px;
+  }
+
+  .header__navbar {
+    display: flex;
+    justify-content: space-around;
+    // @include container;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .logo {
+    max-width: 90%;
+  }
+
+  .header__navbar--search-bar {
+    flex-basis: 50%;
+    margin-left: 3%;
+  }
+
+  .header__navbar--search-input {
+    background: transparent
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+      no-repeat 13px center;
+    // flex: auto;
+    border: none;
+    box-shadow: $box-shadow;
+    display: inline-block;
+    width: 25rem;
+    height: 2.6rem;
+    margin-top: 8px;
+    padding: 9px 16px 9px 48px;
+    overflow: hidden;
+    font-size: $small-font-size;
+    white-space: nowrap;
+    font-weight: $font-semi-bold;
+    border-radius: $border-radius;
+    letter-spacing: 0.8px;
+  }
+
+  .header__navbar--search-btn {
+    background-color: $bg-search-btn;
+    color: $white-color;
+    border: none;
+    border-radius: $border-radius;
+    line-height: 1.75;
+    padding: 10px 15px;
+    font-weight: $font-bold;
+    font-size: $small-font-size;
+    letter-spacing: 0.8px;
+  }
+
+  .header__navbar--search-btn:hover {
+    background-color: $bg-search-btn-hover;
+    cursor: pointer;
+  }
+
+  .header__navbar--user-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: $small-font-size;
+    border-radius: $border-radius;
+    width: 154px;
+    padding: 10px 10px;
+  }
+
+  .header__navbar--user-login:hover {
+    background-color: rgba(20, 69, 84, 0.06);
+    cursor: pointer;
+  }
+
+  .header__navbar--user-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .header__navbar--login-link:hover {
+    text-decoration: underline;
+  }
+
+  .fa-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $gray-color;
+    font-size: $base-font-size;
+  }
+
+  .fa-angle-down {
+    color: $gray-color;
+    font-size: $large-font-size;
+  }
+
+  .header__navbar--user-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: $large-font-size;
+    position: relative;
+  }
+  .header__navbar--user-icons:hover {
+    cursor: pointer;
+  }
+
+  .fa-cart-shopping {
+    color: $gray-color;
+  }
+
   /* MEDIA - INTRO */
   main {
     max-width: 1310px;
     margin: 50px auto;
   }
   section {
-    padding: 20px;
+    padding: 40px;
   }
 
   .container {
