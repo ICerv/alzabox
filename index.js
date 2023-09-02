@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   /* SCROLL BUTTON FUNCTIONALITY */
-  const scrollButton = document.querySelector('.scroll-top');
+  const scrollButton = document.querySelector('.scroll__top');
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
@@ -23,8 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const animateImages = () => {
     const sr = ScrollReveal();
 
-    const imagesToAnimate = document.querySelectorAll('.section__phone--img');
-    const bannerImage = document.querySelector('.intro__phone--banner');
+    const imagesToAnimate = document.querySelectorAll(
+      '.section__alzabox--phone-img',
+    );
+    const bannerImage = document.querySelector(
+      '.section__alzabox--phone-intro',
+    );
 
     imagesToAnimate.forEach((image, index) => {
       const delay = 200 * index;
@@ -46,4 +50,22 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   animateImages();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionItems = document.querySelectorAll(
+    '.section__alzabox--item-more',
+  );
+
+  accordionItems.forEach((item) => {
+    item.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const content = this.querySelector('.section__alzabox--text-more');
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
 });

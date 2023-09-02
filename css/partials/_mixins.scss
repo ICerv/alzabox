@@ -9,15 +9,16 @@
   max-width: 1310px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin heading {
   display: block;
-  font-family: $font-header;
+  font-family: $font-body;
   font-size: $sm-heading-font;
   color: $headings-color;
   line-height: 1.5;
-  font-weight: $font-bold;
   text-align: center;
   margin: 10px 0;
 }
@@ -25,14 +26,14 @@
 @mixin text-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  // align-items: center;
   font-size: $base-font-size;
   line-height: 1.7;
 }
 
 @mixin phone-image {
-  max-width: 100%;
+  max-width: 200px;
   display: block;
 }
 
@@ -46,12 +47,12 @@
 
 @mixin cta-button {
   text-align: center;
-  padding: 15px 30px;
+  padding: 10px 30px;
   letter-spacing: 1px;
   border-radius: $border-radius;
   background: $green-color;
   color: $white-color;
-  font-size: $medium-font-size;
+  font-size: $base-font-size;
   font-weight: $font-semi-bold;
   box-shadow: $box-shadow;
 }
