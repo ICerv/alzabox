@@ -52,20 +52,21 @@ document.addEventListener('DOMContentLoaded', function () {
   animateImages();
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const accordionItems = document.querySelectorAll(
-    '.section__alzabox--item-more',
-  );
+/* ACCORDION FUNCTIONALITY */
+const accordionItems = document.querySelectorAll(
+  '.section__alzabox--item-more',
+);
 
-  accordionItems.forEach((item) => {
-    item.addEventListener('click', function () {
-      this.classList.toggle('active');
-      const content = this.querySelector('.section__alzabox--text-more');
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-      }
-    });
+accordionItems.forEach((item) => {
+  const content = item.querySelector('.section__alzabox--text-more');
+
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
   });
 });

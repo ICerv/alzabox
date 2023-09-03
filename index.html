@@ -23,43 +23,6 @@
 </head>
 
 <body>
-  <header>
-    <div class="header__navbar">
-      <!-- logo -->
-      <div class="header__navbar--logo">
-        <a href="#">
-          <img class="logo" src="./images/logo-alza.png" alt="Logo Alza" />
-        </a>
-      </div>
-      <!-- search input -->
-      <div class="header__navbar--search-bar">
-        <input class="header__navbar--search-input" type="text" placeholder="Co hledáte? Např. kabel AlzaPower..." />
-        <button class="header__navbar--search-btn" type="submit">
-          Hledat
-        </button>
-      </div>
-
-      <!-- log-in user -->
-      <div class="header__navbar--user-login">
-        <i class="fa-solid fa-user"></i>
-        <div class="header__navbar--user-text">
-          <span><strong>Moje Alza</strong></span>
-          <a class="header__navbar--login-link"> Přihlásit se</a>
-        </div>
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- user iconc  -->
-      <div class="header__navbar--user-icons">
-        <i class="fa-solid fa-bag-shopping icon"></i>
-        <i class="fa-solid fa-heart icon"></i>
-        <i class="fa-solid fa-bell icon"></i>
-        <i class="fa-solid fa-cart-shopping icon"></i>
-      </div>
-    </div>
-  </header>
-
-  <!-- BODY SIDE BANNERS -->
   <div class="container">
 
     <!--  SCROLL TOP -->
@@ -67,6 +30,7 @@
       <i class="fa-solid fa-angles-up scroll__top--icon"></i>
     </a>
 
+    <!-- BODY SIDE BANNERS -->
     <div class="body__banners">
       <a href="#" class="body__banner--left-link">
         <img src="./images/left-side-banner.png" alt="Levý banner" />
@@ -77,42 +41,74 @@
       </a>
     </div>
 
+    <!-- HEADER -->
+
+    <header>
+      <div class="header__navbar">
+        <!-- logo -->
+        <div class="header__navbar--logo">
+          <a href="#">
+            <img class="logo" src="./images/logo-alza.png" alt="Logo Alza" />
+          </a>
+        </div>
+        <!-- search input -->
+        <div class="header__navbar--search-bar">
+          <input class="header__navbar--search-input" type="text" placeholder="Co hledáte? Např. kabel AlzaPower..." />
+          <button class="header__navbar--search-btn" type="submit">
+            Hledat
+          </button>
+        </div>
+
+        <!-- log-in user -->
+        <div class="header__navbar--user-login">
+          <i class="fa-solid fa-user"></i>
+          <div class="header__navbar--user-text">
+            <span><strong>Moje Alza</strong></span>
+            <a class="header__navbar--login-link"> Přihlásit se</a>
+          </div>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+        <!-- user iconc  -->
+        <div class="header__navbar--user-icons">
+          <i class="fa-solid fa-bag-shopping icon"></i>
+          <i class="fa-solid fa-heart icon"></i>
+          <i class="fa-solid fa-bell icon"></i>
+          <i class="fa-solid fa-cart-shopping icon"></i>
+        </div>
+      </div>
+    </header>
+
+
+
     <!-- INTRO -->
     <main>
       <section id="intro">
         <div class="section__alzabox">
-
-         
+          <div class="section__alzabox--content section__alzabox--content-intro">
             <h1 class="section__alzabox--heading">Nákupy pod palcem</h1>
             <h3 class="section__alzabox--subheading">
               Nakupuj pohodlně s naší aplikací, ať jsi kdekoliv.
             </h3>
-         
-
-          <div class="section__alzabox--content">
-            <div class="section__alzabox--content-intro">
-
-
-              <div class="section__alzabox--intro-downloads">
-                <img class="section__alzabox--downloads-img" src="./images/qr-code.png"
-                  alt="QR kód - stáhněte aplikaci" />
-                <div class="section__alzabox--store-buttons">
-                  <a href="#">
-                    <img src="./images/app-store.png" alt="Tlačítko AppStore" />
-                  </a>
-                  <a href="#">
-                    <img src="./images/google-play.png" alt="Tlačítko GooglePlay" />
-                  </a>
-                </div>
-                <img src="./images/scan-qr-code.png" alt="Indikátor naskenování QR kódu"
-                  class="section__alzabox--scan-arrow" />
+            <div class="section__alzabox--intro-downloads">
+              <img class="section__alzabox--downloads-img" src="./images/qr-code.png"
+                alt="QR kód - stáhněte aplikaci" />
+              <div class="section__alzabox--store-buttons">
+                <a href="#">
+                  <img src="./images/app-store.png" alt="Tlačítko AppStore" />
+                </a>
+                <a href="#">
+                  <img src="./images/google-play.png" alt="Tlačítko GooglePlay" />
+                </a>
               </div>
-            </div>
-            <div class="section__alzabox--phone-intro">
-              <img src="./images/phone-banner.png" alt="Reklamní banner s telefonem" />
+              <img src="./images/scan-qr-code.png" alt="Indikátor naskenování QR kódu"
+                class="section__alzabox--scan-arrow" />
             </div>
           </div>
-          </div>
+
+          <img class="section__alzabox--phone-intro" src="./images/phone-banner.png"
+            alt="Reklamní banner s telefonem" />
+        </div>
       </section>
 
       <!-- NAVIGATION -->
@@ -289,10 +285,14 @@
           <div class="section__alzabox--content">
             <ul class="section__alzabox--instructions">
               <li class="section__alzabox--item section__alzabox--item-more">
-                <h5 class="section__alzabox--title">
-                  <i class="fa-solid fa-check"></i>
-                  Ověřujte si nejlepší ceny s funkcí skenování čárovýchQR kódů
-                </h5>
+
+                <div class="section__alzabox--accordion">
+                  <h5 class="section__alzabox--title">
+                    <i class="fa-solid fa-check"></i>
+                    Ověřujte si nejlepší ceny s funkcí skenování čárovýchQR kódů
+                  </h5>
+                  <div class="section__alzabox--arrow">▼</div>
+                </div>
                 <p class="section__alzabox--text-more">
                   Ať už zrovna nakupujete v jakémkoliv obchodě, cenu si můžete
                   snadno porovnat s naší cenou pomocí mobilní aplikace. Tato
@@ -313,7 +313,11 @@
                 </p>
               </li>
               <li class="section__alzabox--item section__alzabox--item-more">
-                <h5 class="section__alzabox--title"><i class="fa-solid fa-check"></i> Tmavý režim</h5>
+                <h5 class="section__alzabox--title">
+                  <i class="fa-solid fa-check"></i>
+
+                  Tmavý režim
+                </h5>
                 <p class="section__alzabox--text-more">
                   Pokud preferujete ve vašem telefonu tmavý režim, tak se
                   nemusíte obávat. Naší aplikaci si také můžete přehodit do
@@ -329,8 +333,9 @@
           </div>
         </div>
       </section>
+    </main>
   </div>
-  </main>
+
   <!-- FOOTER -->
 
 </body>

@@ -30,7 +30,6 @@ ul {
 
 a {
   text-decoration: none;
-  display: block;
 }
 
 img {
@@ -65,7 +64,7 @@ img {
 
 /* NAVIGATION */
 .navigation {
-  background: $light-gray-color;
+  // background: $light-gray-color;
   margin-top: 20px;
   box-shadow: $box-shadow;
 
@@ -114,12 +113,10 @@ main {
 }
 
 .section__alzabox {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px 20px;
-  position: relative;
 
   &--heading {
     @include heading;
@@ -129,6 +126,7 @@ main {
     @include heading;
     font-size: $sm-subheading-font;
     font-weight: $font-semi-bold;
+    margin: 0 0 20px;
   }
 
   &--heading {
@@ -136,13 +134,6 @@ main {
       color: green;
       display: block;
     }
-  }
-
-  &--phone-intro {
-    position: absolute;
-    right: 0;
-    max-width: 300px;
-    height: auto;
   }
 
   &--intro-downloads {
@@ -185,7 +176,7 @@ main {
   }
 
   &--text {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   &--phone-img {
@@ -261,11 +252,11 @@ main {
     }
 
     .body__banner--left-link {
-      @include banner-position(-100px, left);
+      @include banner-position(-10px, left);
     }
 
     .body__banner--right-link {
-      @include banner-position(-100px, right);
+      @include banner-position(-10px, right);
     }
   }
 
@@ -390,44 +381,9 @@ main {
     color: $gray-color;
   }
 
-  /* MEDIA - INTRO */
-
-  // .intro__content {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   gap: 40px;
-  // }
-
-  // .intro__downloads {
-  //   margin-top: 70px;
-  //   flex-direction: row;
-  // }
-
-  // .intro__phone--banner {
-  //   max-width: 600px;
-  //   width: 40%;
-  // }
-
-  // .intro__downloads img {
-  //   flex-basis: 19%;
-  // }
-
-  // .intro__downloads--store-buttons a:hover {
-  //   @include zoom-on-button;
-  // }
-
-  // .intro__scan--indicator {
-  //   margin-bottom: 150px;
-  //   display: flex;
-  //   margin-left: 60px;
-  // }
-
   /* MEDIA - NAVIGATION */
   .navigation {
-    min-height: 18em;
-    margin-top: 100px;
+    margin-top: 130px;
     padding: 50px 0;
 
     &__menu--items {
@@ -452,12 +408,15 @@ main {
     }
   }
 
-  /* MEDIA - SECTION */
+  #intro {
+    height: 600px;
+  }
 
   .section__alzabox {
     padding: 40px;
     font-size: $base-font-size;
-    align-items: flex-start;
+    max-width: 1310px;
+    gap: 50px;
 
     &--heading {
       font-size: $heading-font;
@@ -465,64 +424,120 @@ main {
 
     &--subheading {
       font-size: $subheading-font;
-      margin: 25px 110px;
+      margin: 0 100px 0;
     }
 
     &--content {
       @include text-content;
       flex-direction: row;
+      gap: 50px;
+    }
+
+    &--content-intro {
+      flex-direction: column;
+      width: 800px;
+      gap: 10px;
     }
 
     &--intro-downloads {
+      margin-left: 20px;
+      gap: 40px;
+    }
+
+    &--store-buttons {
+      flex-basis: 80%;
+    }
+
+    &--store-buttons {
+      a:hover {
+        @include zoom-on-button;
+      }
+    }
+
+    &--scan-arrow {
+      flex-basis: 50%;
+      margin-bottom: 150px;
+      display: flex;
+    }
+
+    &--phone-intro {
+      position: absolute;
+      top: 180px;
+      right: 0;
+      max-width: 550px;
+      width: 40%;
+    }
+
+    &--instructions {
+    }
+
+    &--phone-img {
+      @include phone-image;
+      max-width: 400px;
+    }
+
+    &--phone-cta {
+      @include phone-cta;
+    }
+
+    &--cta-button {
+      @include cta-button;
+      padding: 20px 40px;
+      font-size: $medium-font-size;
+    }
+
+    &--cta-button:hover {
+      @include zoom-on-button;
+    }
+
+    &--item {
+      padding: 30px;
+      margin-bottom: 20px;
+      // box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      max-width: 60rem;
+      gap: 20px;
+    }
+
+    &--item i {
+      font-size: 40px;
+      padding-top: 3px;
+    }
+
+    &--item-more {
+      margin-top: 0;
+    }
+
+    &--accordion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--text {
+      font-size: $large-font-size;
+    }
+
+    &--text-more {
+      font-size: $medium-font-size;
+    }
+
+    &--title {
+      font-size: $subheading-font;
+      font-weight: $font-semi-bold;
+    }
+
+    &--arrow {
+      display: inline-block;
+
+      font-size: 50px;
+      line-height: 1;
+      margin-left: 10px;
+      vertical-align: middle;
+      transition: transform 0.3s ease-in-out;
     }
   }
-
-  .section__alzabox--instructions {
-    max-width: 70%;
-    margin-bottom: 60px;
-  }
-
-  .section__alzabox--item-more {
-    margin-top: 0;
-  }
-
-  .section__alzabox--phone-cta {
-    @include phone-cta;
-  }
-
-  .section__phone--img {
-    @include phone-image;
-    width: 350px;
-  }
-
-  a.section__alzabox--cta-button {
-    @include cta-button;
-    padding: 20px 40px;
-  }
-
-  a.section__alzabox--cta-button:hover {
-    @include zoom-on-button;
-  }
-
-  .section__alzabox--item {
-    padding: 40px 30px;
-    margin-bottom: 20px;
-    // background: $gray-color;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-  }
-
-  // .section__alzabox--item i {
-  //   font-size: 40px;
-  //   padding-top: 3px;
-  // }
-
-  .section__alzabox--text {
-    font-size: $large-font-size;
-  }
-
-  .section__alzabox--title {
-    font-size: $subheading-font;
-    font-weight: $font-semi-bold;
+  .section__alzabox--item.active .section__alzabox--arrow {
+    transform: rotate(180deg);
   }
 }
